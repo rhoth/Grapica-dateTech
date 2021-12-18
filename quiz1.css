@@ -10,7 +10,7 @@ html, body{
 
 
 body{
-    font-family: 'Montserrat', serif;
+    font-family: sans-serif  ;
 
 }
 
@@ -22,7 +22,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: black;
-    background: url('menu.jpg');
+    background: url('q11.jpg');
     background-color : black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@ main{
 .game-quiz-container{
     width: 40rem;
     height: 30rem;
-    background-color: lightgray;
+    background-color: rgb(98, 98, 214);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid darkgray;
+    border: 2px solid rgb(79, 109, 165);
     border-radius: 25px;
 }
 
@@ -80,7 +80,7 @@ main{
 .game-options-container span{
     width: 45%;
     height: 3rem;
-    border: 2px solid darkgray;
+    border: 2px solid rgb(79, 109, 165);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -93,7 +93,7 @@ span label{
     cursor: pointer;
     transition: transform 0.3s;
     font-weight: 600;
-    color: rgb(22, 22, 22);
+    color: rgb(2, 2, 2);
 }
 
 span label:hover{
@@ -126,7 +126,7 @@ input[type=radio]:checked ~ .option {
     background: none;
     color: rgb(25, 25, 25);
     font-weight: 600;
-    border: 2px solid gray;
+    border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
     outline: none;
 }
@@ -166,7 +166,7 @@ input[type=radio]:checked ~ .option {
 .modal-content-container h1{
     font-size: 1.3rem;
     height: 3rem;
-    color: lightgray;
+    color: rgb(79, 109, 165);
     text-align: center;
 }
 
