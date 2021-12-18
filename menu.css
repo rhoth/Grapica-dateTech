@@ -1,0 +1,108 @@
+
+
+body{
+    background-image: url("menu.jpg");
+    font-family : "Lucida Console", "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container a
+{
+    position: relative;
+    display: inline-block;
+    padding: 35px 100px;
+    border: 8px solid whitesmoke;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    -webkit-box-reflect: below 0px linear-gradient transparent black;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.container a :hover
+{
+    transition-delay: 1.5s;
+    color: lightskyblue;
+    box-shadow: 0 0 10px whitesmoke,
+    0 0 20px whitesmoke,
+    0 0 40px whitesmoke,
+    0 0 80px whitesmoke,
+    0 0 1600px whitesmoke;
+}
+
+.container span{
+    position: relative;
+    z-index: 100;
+}
+.container a:nth-child(2)
+{
+    filter: hue-rotate(80deg);
+}
+
+.container a::before
+{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: whitesmoke;
+    box-shadow: 5px -8px 0 whitesmoke;
+    transition: width 0.5s , left 0.5s , height 0.5s ;
+    box-shadow: 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.container a:hover::before
+{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px -8px 0 whitesmoke;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.container a::after
+{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: rgb(45, 245, 245);
+    box-shadow: -5px 0 0 darkcyan;
+    transition: width 0.5s , left 0.5s , height 0.5s ;
+    box-shadow: 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.container a:hover::after
+{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 darkcyan;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
