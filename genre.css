@@ -52,7 +52,7 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("bg1.jpg");
+    background-image: url("bg1.png");
     background-color: lightseagreen;
     display: flex;
     align-items: center;
